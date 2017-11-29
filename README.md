@@ -1,4 +1,4 @@
-# My Blog repot
+# My Personal Blog Repo 
 
 My personal [Jekyll](https://jekyllrb.com) blog hosting with GitHub Pages. 
 
