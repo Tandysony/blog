@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: #"blogs"
-url: "https://tandysony.github.io"
+url: "http://www.tandysony.com"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
