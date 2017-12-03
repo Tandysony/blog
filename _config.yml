@@ -14,7 +14,7 @@ theme_settings:
   # Header and footer text
   header_text: <h4>The best preparation for tomorrow is doing your best today.<br> -- H. Jackson Brown, Jr.</h4>
   header_text_feature_image: assets/img/fullsize/computer.jpeg
-  footer_text: Tandy S. Tan <i class="fa fa-heart-o" aria-hidden="true"></i> 2017 <br> Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  footer_text: Tandy S. Tan <i class="fa fa-heart-o" aria-hidden="true"></i> 2017 <br> <small>Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a></small>
 
   # Icons
   rss: false

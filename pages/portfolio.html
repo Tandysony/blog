@@ -13,7 +13,7 @@ hide: true
         {% for item in site.portfolio %}
         <div class="col-sm-4 col-xs-4 portfolio-item">
             <a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-link" data-keyboard="true">
-                <div class="caption" title="{{ item.title }}">
+                <div class="caption" data-toggle="tooltip" title="{{ item.title }}">
                     <div class="caption-content">
                         <i class="fa fa-search-plus fa-3x"></i>
                     </div>
