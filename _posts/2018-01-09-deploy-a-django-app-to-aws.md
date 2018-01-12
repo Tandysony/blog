@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Deploy a Django App to AWS
-feature-img: "assets/img/thumbnails/django-aws.jpg"
 thumbnail: "assets/img/thumbnails/django-aws.jpg"
 tags: [Django, Python, AWS, MySQL, Apache2]
 ---
+
+![SSH](../../../assets/img/thumbnails/django-aws.jpg)
 
 ## 1. Launching an Amazon EC2 Instance
 
