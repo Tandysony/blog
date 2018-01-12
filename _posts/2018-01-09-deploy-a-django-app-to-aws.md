@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Deploy a Django App to AWS
-thumbnail: "assets/img/thumbnails/django-aws.jpg"
 tags: [Django, Python, AWS, MySQL, Apache2]
 ---
 
