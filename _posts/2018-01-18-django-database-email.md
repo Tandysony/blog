@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Up MySQL Database and Email for a Django Project
-tags: [Django, Python]
+tags: [Django, Python, SMTP Email]
 ---
 
 ## 1. Set up MySQL for a Django Project
