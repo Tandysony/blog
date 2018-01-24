@@ -10,9 +10,9 @@ My name is **Tandy Suo Tan**. I'm the co-founder and President of RnDGo Inc, a M
 
 At RnDGo, apart from playing a management role, I lead the dev team to develop and improve our online services. The process of from zero to one brings me tremendous pressure and pleasure. I have learnt so much that I could not even have thought of over the past years.
 
-I created this blog to keep and share some of my thoughts and experience about programming. As a full-stack developer, **Python** and **JavaScript** are the two pillars on the tech side of me, but I still love **C#** `^_^`.
+I created this blog to keep and share some of my thoughts and experience about programming. I will update this blog on a weekly basis.
 
-In 2018, much of my spare time will be spent on learning the cutting-edge **new electricity** - **AI**, and reading book on management. I also dive into the wild when I need to be freed.
+As a full-stack developer, **Python** and **JavaScript** are now the two pillars on the tech side of me, but I still love **C#** `^_^`. In 2018, much of my spare time will be spent on learning the cutting-edge **new electricity** - **AI**, and reading book on management. I also dive into the wild when I need to be freed.
 
 #### Life is short, I use Python!
 
