@@ -6,7 +6,7 @@ permalink: /about/
 feature-img: "assets/img/fullsize/wall_e.jpeg"
 ---
 
-My name is **Tandy Suo Tan**. I'm the co-founder and President of RnDGo Inc, a Montreal-based AI start up. I earned my PhD degree in Industrial Engineering from Concordia University, and Master's degree in Robotics from [University of Guelph. I'm a passionate software developer, and have years of hands-on experience in developing enterprise-level Content Management Systems (CMS), using a broad range of technologies: Python (Django), JavaScript (jQuery and VueJS), CSS, HTML5, MySQL, C#, AWS, etc.
+My name is **Tandy Suo Tan**. I'm the co-founder and President of RnDGo Inc, a Montreal-based AI start up. I earned my PhD degree in Industrial Engineering from Concordia University, and Master's degree in Robotics from University of Guelph. I'm a passionate software developer, and have years of hands-on experience in developing enterprise-level Content Management Systems (CMS), using a broad range of technologies: Python (Django), JavaScript (jQuery and VueJS), CSS, HTML5, MySQL, C#, and AWS.
 
 At RnDGo, apart from playing a management role, I lead the dev team to develop and improve our online services. The process of from zero to one brings me tremendous pressure and pleasure. I have learnt so much that I could not even have thought of over the past years.
 
