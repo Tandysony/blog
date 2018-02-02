@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Django Template Inheritance and Webpage Structure
+thumbnail: "assets/img/thumbnails/django-website-structre.png"
 tags: [Django, Python]
 ---
 
