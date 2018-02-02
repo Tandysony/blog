@@ -3,7 +3,7 @@ layout: post
 title: A LaTex thesis template and style for ENCS graduate student from Concordia University
 feature-img: "assets/img/portfolio/writing.png"
 img: "assets/img/portfolio/writing.png"
-date: 2017-09-03
+date: 2017-12-03
 tags: [LaTex, thesis template, Concordia University]
 ---
 
