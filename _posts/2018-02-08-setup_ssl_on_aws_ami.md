@@ -8,7 +8,7 @@ tags: [SSL, AWS, AMI]
 
 > NOTE: This process is for AWS **AMI** instance setup using a paid SSL certificate. If you are using a **Ubuntu** instance, use [Let's Encrypt](https://letsencrypt.org/) instead, as it is free, automated and open Certificate Authority. You might use `Let's Encrypt` for an AWS **AMI** instance, but it is not as easy as **Ubuntu**.
 
-1.  Purchase your ssl from an ssl provider. For example: [https://www.ssls.com/](https://www.ssls.com/)
+1.  Purchase your SSL from an SSL provider. For example: [https://www.ssls.com/](https://www.ssls.com/)
 
 2.  Prepare your CSR (Certificate Signing Request)
 
@@ -49,7 +49,7 @@ tags: [SSL, AWS, AMI]
 
 10. Upload the private key file, `yourdomain.com.key` generated in step 4, and the certificate files to a folder of your website project directory, say, `xxx/yourproject/ssl`.
 
-11. Configure the virtualhost settings to enable SSL on your server, Apache 2.4 in this case.
+11. Configure the `virtualhost` settings to enable SSL on your server, Apache 2.4 in this case.
 
 
     ```bash
