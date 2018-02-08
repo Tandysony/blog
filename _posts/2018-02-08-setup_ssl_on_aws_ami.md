@@ -6,7 +6,7 @@ thumbnail: "assets/img/thumbnails/What-is-SSL-and-How-it-works.png"
 tags: [SSL, AWS, AMI]
 ---
 
-> NOTE: This process is for AWS **AMI** instance setup using a paid SSL certificate. If you are using a **Linux** instance, use [Let's Encrypt](https://letsencrypt.org/) instead, as it is free, automated and open Certificate Authority. You might use `Let's Encrypt` for an AWS **AMI** instance, but it is not as easy as a **Linux** one.
+> NOTE: This process is for AWS **AMI** instance setup using a paid SSL certificate. If you are using a **Ubuntu** instance, use [Let's Encrypt](https://letsencrypt.org/) instead, as it is free, automated and open Certificate Authority. You might use `Let's Encrypt` for an AWS **AMI** instance, but it is not as easy as **Ubuntu**.
 
 1.  Purchase your ssl from an ssl provider. For example: [https://www.ssls.com/](https://www.ssls.com/)
 
