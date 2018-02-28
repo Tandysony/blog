@@ -6,13 +6,13 @@ permalink: /about/
 feature-img: "assets/img/fullsize/wall_e.jpeg"
 ---
 
-My name is **Tandy Suo Tan**. I'm the co-founder and President of RnDGo Inc, a Montreal-based AI start up. I received my PhD degree in Industrial Engineering from Concordia University, and Master's degree in Robotics from University of Guelph. I'm a passionate software developer, and have years of hands-on experience in developing enterprise-level Content Management Systems (CMS), using a broad range of technologies: Python (Django), JavaScript (jQuery and VueJS), CSS, HTML5, MySQL, C#, and AWS.
+My name is **Suo Tan**, you can call me **Tandy** as well. I’m a Full-Stack Developer & Team Leader, co-founder and former President of RnDGo Inc, a Montreal-based AI startup. I received my Ph.D. degree in Industrial Engineering from Concordia University, and Master’s degree in Robotics from the University of Guelph. I’m a passionate software developer, and have years of hands-on experience in developing enterprise-level online and offline Content Management Systems (CMS), using a broad range of technologies: Python (Django), JavaScript (jQuery and Vue.js/Node.js), CSS, HTML5, MySQL, C#, .NET and AWS.
 
-At RnDGo, apart from playing a management role, I lead the dev team to develop and improve our online services. The process of from zero to one brings me tremendous pressure and pleasure. I have learnt so much that I could not even have thought of over the past years.
+At RnDGo, apart from playing a management role, I lead the dev team to develop and improve our online services. The process of from zero to one brings me tremendous pressure and pleasure. I have learned so much that I could not even have thought of over the past years.
 
 I created this blog to keep and share some of my thoughts and experience about programming. I will update this blog on a weekly basis.
 
-As a full-stack developer, **Python** and **JavaScript** are now the two pillars on the tech side of me, but I still love **C#** `^_^`. In 2018, much of my spare time will be spent on learning the cutting-edge **new electricity** - **AI**, and reading book on management. I also dive into the wild when I need to be freed.
+As a full-stack developer, **Python** and **JavaScript** are now the two pillars on the tech side of me, but I still love **C#**, ^\_^. In 2018, much of my spare time will be spent on learning the cutting-edge **new electricity - AI**, and reading books on management. I also dive into the wild when I need to be freed.
 
 #### Life is short, I use Python!
 
