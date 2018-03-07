@@ -1,7 +1,8 @@
 ---
 layout: post
 title: AJAX - Getting Data without Page Refresh
-tags: [Ajax, Django]
+thumbnail: "assets/img/thumbnails/Ajax.jpg"
+tags: [Ajax]
 ---
 
 ## Background
