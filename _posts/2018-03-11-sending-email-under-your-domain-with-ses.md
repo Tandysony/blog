@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sending Email Under Your Own Domain With AWS SES
+title: Sending Emails Under Your Own Domain With AWS SES
 tags: [Djang, Email, AWS, SES]
 ---
 
 ## 1. Background
 
-Once you have your own website/domain up and running, you might need to send Emails to from you own domain, for promotion or notification purpose. There are many transitional mail services in the market, such as MailGun, SendGrid, Mandrill, SES. For me, SES is the way to go as I am a long-time AWS user. I have been using EC2, RDS, S3, CloudFront, Route53, etc. Then, why not SES? I have been recommending AWS to my company as well. Amazon should have written me a check for doing that. `^_^`
+Once you have your own website/domain up and running, you might need to send Emails to someone else from you own domain, for promotion or notification purpose. There are many transitional mail services in the market, such as MailGun, SendGrid, Mandrill, and SES. For me, SES is the way to go as I am a long-time AWS user. I have been using many Amazon Web Services: EC2, RDS, S3, CloudFront, Route53, etc. Why not SES then? And, I have been recommending AWS to my company as well. Amazon should have written me a check for doing that. `^_^`
 
-AWS SES is a cost-effective solution (61,000 emails for free every month) for sending transitional emails from your own domain if you are already an AWS user. According to the [introduction here](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sending-email.html), there are three ways to use it: Amazon SES console, SMTP Interface, Amazon SES API. Since I was using Google Mail SMTP service (not under my domain), SMTP is the way I would like to take.
+AWS SES is a cost-effective solution (60,000+ emails for free every month) for sending emails from your own domain, if you are already an AWS user. According to the [introduction here](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sending-email.html), there are three ways to use it: Amazon SES console, SMTP Interface, Amazon SES API. Since I was using GMail SMTP service (not under my domain but Google's), SMTP is the way I would like to take.
 
 ## 2. Setup
 
@@ -46,7 +46,7 @@ Add you own domain for SES.
 
 ![AWS Support](../../../assets/img/thumbnails/ses/domain-for-ses.png)
 
-Configure the domain settings for `Verification`, `Notification`, `DKIM`, `Identity Policies`, and `MAIL FROM DOMAN`. Each has its own linked tutorials, I will skip here. Please pay attention to `MAIL FROM DOMAN` settings. If you want send emails from `no-reply@mail.mydomain.com` under you domain `domain.com`, set it as `mail.mydomain.com`.
+Configure the domain settings for `Verification`, `Notification`, `DKIM`, `Identity Policies`, and `MAIL FROM DOMAN`. Each has its own linked tutorials, I will skip here. Please pay attention to `MAIL FROM DOMAN` settings. If you want send emails from `no-reply@mail.yourdomain.com` under you domain `domain.com`, set it as `mail.yourdomain.com`.
 
 ![AWS Support](../../../assets/img/thumbnails/ses/domain-verification.png)
 
@@ -64,8 +64,8 @@ After you created your SMTP credentials, you can configure your Django app to se
 
 ![AWS Support](../../../assets/img/thumbnails/ses/smtp-django-settings.png)
 
-Make your `DEFAULT_FROM_EMAIL='My Name <no-reply@mail.mydomain.com>'`
+Make your `DEFAULT_FROM_EMAIL='Your Name <no-reply@mail.yourdomain.com>'`
 
 > NOTE: I am using `python-decouple` package here, to prevent sensitive information form been leaking to others. Please refer to its official website on how to use it.
 
-Now, all setting are done. You can enjoy tens of thousands emails from your own domain for free, :-).
+Now, all setting are done. You can now enjoy tens of thousands emails from your own domain for free, :-).
