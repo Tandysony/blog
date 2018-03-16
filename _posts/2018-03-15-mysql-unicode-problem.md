@@ -4,8 +4,6 @@ title: Unicode Problem on MySQL
 tags: [MySQL, Unicode]
 ---
 
-## 1. Background
-
 When using MySQL as you database engine, either locally or on the cloud (AWS RDS), there might be `UnicodeEncodeError` raising from MySQL, rather than from python/Django:
 
 ```python
@@ -75,20 +73,20 @@ Don’t blindly copy-paste this! The exact statement depends on the column type,
 After applying to each table, you should be getting the following table:
 
 ```
-+-------------------------------+-------------------+
-| Variable_name            	    | Value             |
-|-------------------------------|-------------------|
-| character_set_client     	    | utf8mb4           |
-| character_set_connection 	    | utf8mb4           |
-| character_set_database  	    | utf8mb4           |
-| character_set_filesystem 	    | binary            |
-| character_set_results    	    | utf8mb4           |
-| character_set_server     	    | utf8mb4           |
-| character_set_system     	    | utf8              |
-| collation_connection     	    | utf8mb4_unicode_ci|
-| collation_database       	    | utf8mb4_unicode_ci|
-| collation_server         	    | utf8mb4_unicode_ci|
-+-------------------------------+-------------------+
++--------------------------+-------------------+
+| Variable_name            | Value             |
+| ------------------------ | ----------------- |
+| character_set_client     | utf8mb4           |
+| character_set_connection | utf8mb4           |
+| character_set_database   | utf8mb4           |
+| character_set_filesystem | binary            |
+| character_set_results    | utf8mb4           |
+| character_set_server     | utf8mb4           |
+| character_set_system     | utf8              |
+| collation_connection     | utf8mb4_unicode_ci|
+| collation_database       | utf8mb4_unicode_ci|
+| collation_server         | utf8mb4_unicode_ci|
++--------------------------+-------------------+
 10 rows in set (0.00 sec)
 ```
 
