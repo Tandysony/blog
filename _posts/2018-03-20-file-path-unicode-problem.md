@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Unicode Problem in a File Path or a File Name
+title: Unicode Problem in a File Path or File Name
 tags: [Python Unicode]
 ---
 
-In the last blog, I have talked about the Unicode problem with MySQL database, and how to change the settings to make it support Unicode characters. In this blog, I am going to talk about the Unicode problem in a file path or file name, if we are read/write data with Python 2. This problem is not applicable for Python 3.
+In the last blog, I have talked about the Unicode problem with MySQL database charset, and how to change the settings to make it support Unicode characters. In this blog, I am going to talk about the Unicode problem in a file path or file name, if we are read/write data with Python 2. This problem is not applicable for Python 3.
 
 Python 2 does not support Unicode encoding by default (Chinese characters, for example), You need to explicitly declare. There are two types encoding for string representation: `str` (default) and `Unicode`, while `Unicode` type is the only one in Python 3. The commonly used Unicode charsets are `utf-8`, `gb2312`, `gbk` etc. Existing encode/decoding conversation functions are：`decode(char_set)` and `Unicodeencode(char_set)`.
 

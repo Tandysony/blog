@@ -4,7 +4,7 @@ title: Unicode Problem on MySQL
 tags: [MySQL, Unicode]
 ---
 
-When using MySQL as you database engine, either locally or on the cloud (AWS RDS), there might be `UnicodeEncodeError` raising from MySQL, rather than from python/Django:
+When using MySQL as you database engine, either locally or on the cloud (AWS RDS), there might be `UnicodeEncodeError` raising from MySQL, rather than from Python/Django:
 
 ```python
 Internal Server Error: /url/path/operation/id
