@@ -10,9 +10,12 @@ tags: [Ajax]
 Have been working on both back-end and front-end projects for years, more and more circumstances do I face getting data from and posting data to the server. On traditional Django applications, I send data from a server to a page by rendering a HTML template, in a Django View. This is so convenient that I can develop a prototype in a very short amount of time. However, there are four issues when a project getting more complex:
 
 - Back-end and front-end are **highly coupled**;
-- Templates are rendered at the server side, **adding load** to the server. Remember, computing power of a server, e.g., AWS EC2, Azure cognitive services, is expensive for SMEs (small and medium enterprises);
+
+- Templates are rendered at the server side first, **adding load** to the server. Remember, computing power of a server, e.g., AWS EC2, Azure cognitive services, is expensive for SMEs (small and medium enterprises);
+
 - If pulling massive data from different Django models and rendering on a webpage, users will experience **very slow page loading**;
-- Whenever getting data from and post data to a server, I encountered **page refresh**.
+
+- Whenever getting data from and post data to a server, most likely I encountered **page refresh**.
 
 To resolve these issues, `Ajax` and `Django REST Framework (DRF)` are adopted to save the world. **Ajax** makes page refresh irrelevant. **DRF** decouples back-end and front-end. The decoupling makes web development an easier and much enjoyable process. Back-end server provides and processes data only, no page rendering involved. Front-end UI consumes and sends data only. In this way, back-end developers could focus on designing RESTful APIs while front-end developers can enjoy any framework they like, e.g., `React`, `Vue`, and `Angular`, for the development.
 
