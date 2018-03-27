@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sending Emails Under Your Own Domain With AWS SES
-tags: [Djang, Email, AWS, SES]
+tags: [Django, AWS, SES]
 ---
 
 ## 1. Background
