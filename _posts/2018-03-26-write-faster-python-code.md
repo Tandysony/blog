@@ -4,15 +4,15 @@ title: Write Faster Python Code
 tags: [Python]
 ---
 
-Just after I stepped into Python world, I often have been told that `Python is slow, especially the Django Framework.` The first question bump into my mind is `Slow, in terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to use and fun to use, and can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of third party well-maintained libraries and packages at your disposal to speed up you development process.
+After I stepped into Python world, often had I been told that `Python is slow, especially the Django Framework.` The first question bump into my mind is `Slow, in terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to use and fun to use, and can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of well-maintained third-party libraries and packages at your disposal, to speed up your development process.
 
 Back to the topic, is Python really that slow? You might be writing slow Python code. The following are some tip on how much time you would save if writing pythonic code the right way.
 
-> NOTE: All the following code snippets are running with Python 3.6 and Jupyer Notebook, on my 2011 MacBook Pro 13' (2.3G Core i5, 8G 1333Mhz DDR3, and macOS High Sierra). Please pay attention to the ratios.
+> NOTE: All the following code snippets are running with Python 3.6 and Jupyter Notebook, on a 2011 13-inch MacBook Pro (2.3G Core i5, 8G 1333MHz DDR3, and macOS High Sierra).
 
 ### 1. `list()` vs `[]`
 
-Both are used the create a list.
+Both are used to create a list.
 
 ```python
 import timeit
@@ -29,7 +29,7 @@ Therefore, **use list comprehension `[]` to create a list**.
 
 ### 2. `dict()` vs `{}`
 
-Both are used the create a dictionary.
+Both are used to create a dictionary.
 
 ```python
 import timeit
@@ -46,7 +46,7 @@ Therefore, **use dictionary comprehension `{}` to create a dictionary**.
 
 ### 3. Checking for an empty list
 
-There are three commonly used way to check an empty list: `if len(a_list)==0`, `if a_list==[]` and `if not a_list`. Let look at how much time each of they costs.
+There are three commonly used ways to check an empty list: `if len(a_list)==0`, `if a_list==[]` and `if not a_list`. Let look at how much time each of they costs.
 
 ```python
 a_list=[1,2,3]
@@ -170,3 +170,5 @@ There are two ways to sort a list: the built-in `.sort()` function of the list o
 Apparently, the built-in `.sort()` function is `33.1 times faster`.\
 
 Therefore, **when sorting a list, use its built-in `.sort()` function.**
+
+Those tips help you writing cleaner and faster python code. There are other approaches and tools to optimize performance for very specific topics, but beyond the topic of this subject. For example, we can use `prefetch_related`, `select_related` and `Django Debug Toolbar` for optimize a Django app. I will write another blog in this regard later.
