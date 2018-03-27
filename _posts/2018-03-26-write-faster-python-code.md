@@ -4,11 +4,13 @@ title: Write Faster Python Code
 tags: [Python]
 ---
 
-After I stepped into Python world, often had I been told that `Python is slow, especially the Django Framework.` The first question bump into my mind is `Slow, in terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to use and fun to use, and can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of well-maintained third-party libraries and packages at your disposal, to speed up your development process.
+After I stepped into Python world, often had I been told that `Python is slow, especially the Django Framework.` The first question bump into my mind is `Slow? In terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to use and fun to use, and can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of well-maintained third-party libraries and packages at your disposal, to speed up your development process.
 
-Back to the topic, is Python really that slow? You might be writing slow Python code. The following are some tip on how much time you would save if writing pythonic code the right way.
+Back to the topic, is Python really that slow? You might be writing slow Python code. The following are some tips on how much time you would save if writing pythonic code the right way.
 
 > NOTE: All the following code snippets are running with Python 3.6 and Jupyter Notebook, on a 2011 13-inch MacBook Pro (2.3G Core i5, 8G 1333MHz DDR3, and macOS High Sierra).
+
+## Tips
 
 ### 1. `list()` vs `[]`
 
@@ -119,7 +121,7 @@ Therefore, **when filtering a list, try the list comprehension way, rather than 
 
 ### 6. Testing Membership: set vs list
 
-Assume that we have a huge amount of data available, and we are going to further test its membership. We can make a list to hold the data, like the `THOUSAND_NUMBERS` in the previous example. Here is some test results.
+Assume that we have a huge amount of data available, and we are going to further test its membership. We can make a list to hold the data, like the `THOUSAND_NUMBERS` in the previous example. Here are some test results.
 
 ```python
 import random
@@ -147,11 +149,11 @@ MILLION_SET = set(MILLION_NUMBERS)
 # 227 ms ± 11.5 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 
-From the results, testing membership in a set **destroys** that of a list: `138 ns` vs `82.9 ms`, `600,000 times faster`. However, we must keep in mind that, covering a list to a set takes much time.
+From the results, testing membership in a set **destroys** that of a list: `138 ns` vs `82.9 ms`, `600,000 times faster`. Please do not forget that, covering a list to a set takes much time.
 
-If we have data initialized as a **set** rather than a **list**, we can avoid converting, and save us much time in testing membership. Please keep in mind, elements in a set are unique. If you data have duplicates and the duplication matters, please do NOT use set.
+If we have data initialized as a **set** rather than a **list**, we can avoid converting to save us much time in testing membership. Please keep in mind, **elements in a set are unique**. If your data have duplicates and the duplication matters, please do NOT use set.
 
-Other than list and set, dictionary is an option as well. It is a hash table-bash data structure. This makes adding, retrieving and updating elements very fast. It is beyond the topic of this test.
+Other than list and set, dictionary is an option as well. It is a hash table-bash data structure. This makes adding, retrieving and updating elements very fast. It is not the concern here.
 
 Therefore, **if data duplication does not matter for you, use set for membership testing, otherwise, use list.**
 
@@ -170,5 +172,7 @@ There are two ways to sort a list: the built-in `.sort()` function of the list o
 Apparently, the built-in `.sort()` function is `33.1 times faster`.\
 
 Therefore, **when sorting a list, use its built-in `.sort()` function.**
+
+## Summary
 
 Those tips help you writing cleaner and faster python code. There are other approaches and tools to optimize performance for very specific topics, but beyond the topic of this subject. For example, we can use `prefetch_related`, `select_related` and `Django Debug Toolbar` for optimize a Django app. I will write another blog in this regard later.
