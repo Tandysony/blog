@@ -8,19 +8,19 @@ tags: [Python, Django, RESETful APIs]
 
 ### Background
 
-The current RnDGo web application (Version 1) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP request for each module. However, more and more problems to raising:
+The current RnDGo web application (Version 1) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP requests for each module. However, more and more problems to raising:
 
-- The endpoints (URLs) are not systematically organized. The more apps we add in, the messier for routing the HTTP request.
+- The endpoints (URLs) are not systematically organized. The more apps we add in, the messier for routing the HTTP requests.
 
-- Many of the API and front-end are heavily coupled. The rendering is also heavy from a view to a template.
+- Many of the APIs and front-end are heavily coupled. The rendering is also heavy from a view to a template.
 
-- All the Views-URLs-Templates are for mainly for desktop users, they are not well crafted for mobile users. If running from a mobile phone, the user experience will suffer (You can run the simulation in Chrome browser).
+- All the Views-URLs-Templates are for mainly for desktop users, they are not well crafted for mobile users. If we are developing mobile apps, developers will suffer.
 
-- No versioning controls over the APIs. If any substantial changes made to the existing APIs, the front-end will broke as some of the data wont be rendered. And, an older version app might not work any more (consider about future Mobile Apps or third part plug-ins, they may not updated to the lasted).
+- No versioning controls over the APIs. If any substantial changes made to the existing APIs, the front-end will break as some of the data wont be rendered. And, an older version app might not work any more (consider about future Mobile Apps or third part plug-ins, they may not updated to the lasted).
 
 ### Requirements
 
-To solve the above problem, we need re-design/re-organize our APIs systematically and strategically using available tools in the market (we do not want to reinvent the wheels). The requirements are listed below:
+To solve the above problem, we need to re-design/re-organize our APIs systematically and strategically using available tools in the market (we do not want to reinvent the wheels). The requirements are listed below:
 
 - One API for all platforms
 - Decouple/Loose coupling from front-end
