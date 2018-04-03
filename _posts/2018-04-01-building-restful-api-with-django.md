@@ -8,7 +8,7 @@ tags: [Python, Django, RESETful APIs]
 
 ### Background
 
-The current RnDGo web application (Version 1) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP requests for each module. However, more and more problems to raising:
+The current RnDGo web application (Version 1) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP requests for each module. However, more and more problems are raising:
 
 - The endpoints (URLs) are not systematically organized. The more apps we add in, the messier for routing the HTTP requests.
 
