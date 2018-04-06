@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building RESETful APIs with the Django
+title: Building RESETful APIs with Django
 tags: [Python, Django, RESETful APIs]
 ---
 
@@ -8,24 +8,24 @@ tags: [Python, Django, RESETful APIs]
 
 ### Background
 
-The current RnDGo web application (Version 1) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP requests for each module. However, more and more problems are raising:
+The current RnDGo web application (Version 1.0.0-beta2) uses the traditional Django method (RPC-based) to provide resources to the front-end users. So far, we can handle the HTTP requests for each module. However, more and more problems are raising:
 
 - The endpoints (URLs) are not systematically organized. The more apps we add in, the messier for routing the HTTP requests.
 
-- Many of the APIs and front-end are heavily coupled. The rendering is also heavy from a view to a template.
+- Many of the APIs and front-end are heavily coupled. The pre-rendering is also heavy from a view to a template.
 
-- All the Views-URLs-Templates are for mainly for desktop users, they are not well crafted for mobile users. If we are developing mobile apps, developers will suffer.
+- All the Views-URLs-Templates are mainly for desktop users, they are not well crafted for mobile users. If we are developing mobile apps to consume our APIs, developers will suffer.
 
-- No versioning controls over the APIs. If any substantial changes made to the existing APIs, the front-end will break as some of the data wont be rendered. And, an older version app might not work any more (consider about future Mobile Apps or third part plug-ins, they may not updated to the lasted).
+- No versioning controls over the APIs. If any substantial changes made to the existing APIs, the front-end will break as some of the data wont be rendered. And, an older version app might not work any more (consider about future Mobile Apps or third part plug-ins, they may not be updated to the lasted).
 
 ### Requirements
 
 To solve the above problem, we need to re-design/re-organize our APIs systematically and strategically using available tools in the market (we do not want to reinvent the wheels). The requirements are listed below:
 
-- One API for all platforms
-- Decouple/Loose coupling from front-end
+- One API system for all platforms
+- Decoupling between back-end and front-end
 - Django compatible
-- Easy to version and maintain
+- Easy to versioning and maintaining
 - Open source
 
 ## 2. Criteria and Solution
@@ -36,15 +36,15 @@ For detailed differences between RPC-Based and REST-base HTTP API, please refer 
 
 For detailed differences between REST and GraphQL, go to [this article](https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/)
 
-Those two are not exclusive and can be used at the same time. But due to our limited resources, we need to pick one to start. To evaluate them, there are a few criteria to be met:
+Those two are **not** exclusive and can be used at the same time. But due to our limited resources, we need to pick one to start. To evaluate them, there are a few criteria to be met:
 
-- (1) The wildly used the better
-- (2) The easier to adapt and debug the better
+- (1) The more wildly used the better
+- (2) The easier to adapt and to debug the better
 - (3) No breaking changes to our current system
 - (4) Well documented tutorial with active community supports
 - (5) Trend
 
-For each of the criteria, a 3-level scoring system is employed to evaluate each of them: `0` for `Not satisfied`; `1` for `Somewhat satisfied`; and `3` for `Completely satisfied`.
+For each of the criteria, a 3-level scoring system is employed to evaluate: `0` for `Not satisfied`; `1` for `Somewhat satisfied`; and `3` for `Completely satisfied`.
 
 To compare them:
 
@@ -493,4 +493,4 @@ Due to its simplicity, URL versioning is very popular and widely used by compani
 
 ## 4. Summary
 
-If you have the resources (time, money and human power), learn and choose GraphQL. If you have legacy APIs to maintain and update, choose DRF for the time being and slowly integrate GraphQL into your system. Nevertheless, the basic API design principles stays the same.
+If you have the resources (time, money and human power), learn and choose GraphQL. If you have legacy code base and APIs in Django to maintain and update, choose DRF for the time being and slowly integrate GraphQL into your system. Nevertheless, the basic API design principles stays the same.

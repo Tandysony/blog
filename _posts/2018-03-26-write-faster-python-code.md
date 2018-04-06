@@ -4,9 +4,9 @@ title: Write Faster Python Code
 tags: [Python]
 ---
 
-After I stepped into Python world, often had I been told that `Python is slow, especially the Django Framework.` The first question bump into my mind is `Slow? In terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to use and fun to use, and can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of well-maintained third-party libraries and packages at your disposal, to speed up your development process.
+After I stepped into the Python world, very often had I been told that `Python is slow, especially the Django Framework.` At that very moment, the first question bumped into my mind is `Slow? In terms of what?` If we are talking about _learning a new language_ and _prototyping_, this is definitely NOT true. Python is easy to learn and fun to use. It can be used to [do almost anything you want](https://www.python.org/about/apps/): website development, web scraping, data science, machine learning, desktop apps/games, etc. There are tons of well-maintained third-party libraries and packages at your disposal, to speed up your development process.
 
-Back to the topic, is Python really that slow? You might be writing slow Python code. The following are some tips on how much time you would save if writing pythonic code the right way.
+Back to the topic, is Python really that slow? Please look at your own code first: You might have written slow Python code. The following are some tips on how much time you would save if writing pythonic code the right way.
 
 > NOTE: All the following code snippets are running with Python 3.6 and Jupyter Notebook, on a 2011 13-inch MacBook Pro (2.3G Core i5, 8G 1333MHz DDR3, and macOS High Sierra).
 
@@ -63,13 +63,13 @@ a_list=[1,2,3]
 # 73.1 ns ± 1.78 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
 ```
 
-From the results, we can see that `if len(a_list)==0` is the slowest. `if a_list==[]` is **`63% fast`**, and `if not a_list` is **`3.5 times faster`**.
+From the results, we can see that `if len(a_list)==0` is the slowest. `if a_list==[]` is **`63% faster`**, and `if not a_list` is **`3.5 times faster`**.
 
 Therefore, **use `if not a_list` to check an empty list.**
 
 ### 4. Checking for `True` or `False`
 
-There are three commonly used way to check for `True` or `False`, and I will use checking for `False` as an example: `if var==False`, `if var is False` and `if not var`. Let look at how much time each of they costs.
+There are three ways commonly used to check for `True` or `False`, and I will use checking for `False` as an example here: `if var==False`, `if var is False` and `if not var`. Let look at how much time each of they costs.
 
 ```python
 var = False
@@ -84,7 +84,7 @@ var = False
 # 92.1 ns ± 8.76 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
 ```
 
-From the results, we can see that `if var==False` is the slowest. `if var is False` is **`10% fast`**, and `if not var` is **`72% faster`**.
+From the results, we can see that `if var==False` is the slowest. `if var is False` is **`10% faster`**, and `if not var` is **`72% faster`**.
 
 Therefore, **use `if not var` to check for `True` or `False`.**
 
@@ -115,7 +115,7 @@ def get_odd_numbers():
 # 154 µs ± 8.91 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
 
-From the result, you might be surprised: The `filter` function is the slowest, even slower than the `for` loop version. List comprehension, as we have illustrated earlier, is the fastest. And it is **`2.4 times faster`** then the `filter` function.
+From the result, you might be surprised: The `filter` function is the slowest, even slower than the `for` loop version. List comprehension, as we have illustrated earlier, is the fastest. And it is **`2.4 times faster`** than the `filter` function.
 
 Therefore, **when filtering a list, try the list comprehension way, rather than the `filter` and `for` loop, as it is much faster and syntactically beautiful.**
 
@@ -153,7 +153,7 @@ From the results, testing membership in a set **destroys** that of a list: `138 
 
 If we have data initialized as a **set** rather than a **list**, we can avoid converting to save us much time in testing membership. Please keep in mind, **elements in a set are unique**. If your data have duplicates and the duplication matters, please do NOT use set.
 
-Other than list and set, dictionary is an option as well. It is a hash table-bash data structure. This makes adding, retrieving and updating elements very fast. It is not the concern here.
+Other than list and set, dictionary is an option as well. It is a hash-table-based data structure. This makes adding, retrieving and updating elements very fast. It is not the concern here.
 
 Therefore, **if data duplication does not matter for you, use set for membership testing, otherwise, use list.**
 
@@ -169,10 +169,10 @@ There are two ways to sort a list: the built-in `.sort()` function of the list o
 # 39.6 ms ± 4.99 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
 
-Apparently, the built-in `.sort()` function is `33.1 times faster`.\
+Apparently, the built-in `.sort()` function is `33.1 times faster`.
 
 Therefore, **when sorting a list, use its built-in `.sort()` function.**
 
 ## Summary
 
-Those tips help you writing cleaner and faster python code. There are other approaches and tools to optimize performance for very specific topics, but beyond the topic of this subject. For example, we can use `prefetch_related`, `select_related` and `Django Debug Toolbar` for optimize a Django app. I will write another blog in this regard later.
+Those tips help you writing cleaner and faster python code. There are other approaches and tools to optimize performance for very specific topics, but they beyond the topic of this subject. For example, we can use `prefetch_related`, `select_related` and `Django Debug Toolbar` for optimizing a Django app. I will write another blog in this regards later.
