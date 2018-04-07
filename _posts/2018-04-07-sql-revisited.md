@@ -6,13 +6,13 @@ tags: [SQL]
 
 ## Background
 
-Django, with its built-in ORM (Object Relational Mapping) and QuerySet, provides users an easy way to deal with relational database. You do not need to know SQL commands to perform database queries. In addition, `django-debug-toolbar` is available for your to inspect how the QuerySet are transformed into SQL commands, how much time each query command takes, and to improve the performance.
+Django, with its built-in `ORM` (Object Relational Mapping) and `QuerySet`, provides users an easy way to deal with relational database. You do not need to know SQL commands to perform database queries. In addition, `django-debug-toolbar` is available for your to inspect how the QuerySet are transformed into SQL commands and how much time each query command takes, to further improve the performance.
 
-To me, SQL queries are still useful skills for data processing and analyzing when working with relational databases. This post revisits some of the core SQL commands, thought there are many tools available for creating and managing database schemas, e.g., MySQL Workbench, SQL Sever Management Studio, Sequel Pro.
+To me, SQL queries are still useful for data processing and analyzing when working with relational databases. This post revisits some of the core SQL commands, thought there are many intuitive tools available for creating and managing database schemas and perform analytics, e.g., `MySQL Workbench`, `SQL Sever Management Studio`, `Sequel Pro`.
 
 ## Core SQL Commands
 
-The following SQL commands were written and tested with MySQL Workbench 6.2.
+The following SQL commands were written and tested with `MySQL Workbench 6.2`.
 
 #### - Create a database
 
@@ -199,3 +199,8 @@ INNER JOIN product p on o.productID=p.productID
 INNER JOIN Customer c on o.customerID=c.id
 GROUP BY c.city;
 ```
+
+### - The different types of SQL join
+
+![The different types of SQL join](../../../assets/img/thumbnails/different_SQL_Joins.png)
+[Figure Source](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
