@@ -146,7 +146,7 @@ AND lastName='Tan';
 ```sql
 DELETE FROM testsql.Customer
 WHERE firstName='Tandy'
-AND lastName LIKE "Wan\_";
+AND lastName LIKE "Wan_";
 ```
 
 ### - Add a column/new field to a table without/with default value
