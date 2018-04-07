@@ -8,7 +8,7 @@ tags: [SQL]
 
 Django, with its built-in `ORM` (Object Relational Mapping) and `QuerySet`, provides users an easy way to deal with relational database. You do not need to know SQL commands to perform database queries. In addition, `django-debug-toolbar` is available for your to inspect how the QuerySet are transformed into SQL commands and how much time each query command takes, to further improve the performance.
 
-To me, SQL queries are still useful for data processing and analyzing when working with relational databases. This post revisits some of the core SQL commands, thought there are many intuitive tools available for creating and managing database schemas and perform analytics, e.g., `MySQL Workbench`, `SQL Sever Management Studio`, `Sequel Pro`.
+To me, SQL queries are still useful for data processing and analyzing when working with relational databases. This post revisits some of the core SQL commands, thought there are many intuitive tools available for creating and managing database schemas and perform analyses, e.g., `MySQL Workbench`, `SQL Sever Management Studio`, `Sequel Pro`.
 
 ## Core SQL Commands
 
@@ -103,7 +103,11 @@ SELECT * FROM testsql.Customer;
 SELECT DISTINCT firstName FROM testsql.Customer;
 ```
 
-### - Select objects using `like` keyword and `%` or `_` as placeholder
+### - Select objects using `like` keyword and `%` or `_` wildcard
+
+- `%` : `0`, `1` or more characters;
+
+- `_` : `1`(single) character;
 
 ```sql
 SELECT * FROM testsql.Customer
@@ -111,8 +115,14 @@ WHERE firstName='Tandy'
 AND lastName LIKE 'Wan_';
 ```
 
-`%`: `0` or more;
-`_`: `1` or more;
+| `LIKE` Operator                | Description                                                                           |
+| ------------------------------ | ------------------------------------------------------------------------------------- |
+| `WHERE lastName LIKE 'a%'`     | Finds any values that **starts with "a"**                                             |
+| `WHERE lastName LIKE '%a'`     | Finds any values that **ends with "a"**                                               |
+| `WHERE lastName LIKE '%or%'`   | Finds any values that **have "or" in any position**                                   |
+| `WHERE lastName LIKE '_r%'`    | Finds any values that have **"r" in the second position**                             |
+| `WHERE lastName LIKE 'a_%_%'`  | Finds any values that **starts with "a"** and are **at least 3 characters** in length |
+| `WHERE ContactName LIKE 'a%o'` | Finds any values that **starts with "a"** and **ends with "o"**                       |
 
 ### - update a filed of a table
 
@@ -151,7 +161,7 @@ ALTER TABLE orders
 ADD orderDate datetime DEFAULT now();
 ```
 
-# Add a column with default value
+### - Add a column with default value
 
 ```sql
 ALTER TABLE testsql.Customer
