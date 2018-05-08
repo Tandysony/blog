@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set up SSL for a domain on an AWS AMI instance
+title: How to Set Up SSL for a Domain Hosted on an AWS AMI Instance
 tags: [SSL, AWS, AMI]
 ---
 
