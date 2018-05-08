@@ -1,6 +1,8 @@
 ---
 layout: post
 title: How to Set Up SSL for a Domain Hosted on an AWS AMI Instance
+feature-img: "assets/img/thumbnails/What-is-SSL-and-How-it-works.png"
+thumbnail: "assets/img/thumbnails/What-is-SSL-and-How-it-works.png"
 tags: [SSL, AWS, AMI]
 ---
 
