@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: Tandy S. Tan
+subtitle: Tandy Tan
 permalink: /about/
 feature-img: "assets/img/fullsize/wall_e.jpeg"
 ---
